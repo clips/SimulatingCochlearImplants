@@ -1,7 +1,6 @@
 Code for obtaining results described in the following paper:
 
-> Grimm R., Michèle P., Gillis S. and Daelemans W. Simulating speech processing with cochlear implants: How does channel interaction
-affect learning in neural networks? Submitted to PLOS One.
+> Grimm R, Pettinato M, Gillis S, Daelemans W (2019). Simulating speech processing with cochlear implants: How does channel interaction affect learning in neural networks? PLoS ONE 14(2): e0212134. https://doi.org/10.1371/journal.pone.0212134
 
 ## OS and Dependencies
 
