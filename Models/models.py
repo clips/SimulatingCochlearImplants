@@ -7,17 +7,17 @@ from keras.layers.convolutional import Convolution2D
 from keras.layers import (Dense, BatchNormalization, Activation, Dropout,
                           Flatten,  Reshape)
 
-config = tf.ConfigProto()
+config = tf.compat.v1.ConfigProto()
 config.gpu_options.allow_growth=True # don't pre-allocate entire GPU memory
 config.allow_soft_placement=True     # fall back to CPU if no GPU op available
-sess = tf.Session(config=config)
+sess = tf.compat.v1.Session(config=config)
 K.set_session(sess)
 
 
 def perceptron(state, n_mels, inputlength, n_classes):
 
     # set random seed for replicability
-    tf.set_random_seed(state['random_seed'])
+    tf.compat.v1.set_random_seed(state['random_seed'])
     np.random.seed(state['random_seed'])
     init = glorot_uniform(seed=state['random_seed'])
 
